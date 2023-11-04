@@ -13,7 +13,7 @@
 # basic-mod1
 
 1) According to the question, there is a list of numbers that are given. We need to apply mod 37 to find the key using given data.
-2) I then put the list onto a python code and then used a decryption method to unscramble the key
+2) I then put the list onto a python code and then used a decryption method to unscramble the data to get the flag
    
    ![image](https://github.com/Snapskillz123/picoCTF/assets/149099858/eef069a4-68e3-4fee-b3fc-362d17a949b6)
 
