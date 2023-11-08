@@ -1,4 +1,4 @@
-# new-caeser
+# new-caesar
 
 1) There is a Python code linked to the question which contains a new encryption method for strings.
 2) After analysing the code, I see that in this decryption technique:
