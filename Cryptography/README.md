@@ -1,3 +1,24 @@
+# new-caeser
+
+1) There is a Python code linked to the question which contains a new encryption method for strings.
+2) After analysing the code, I see that in this decryption technique:
+   - first, a character is extracted from the given string in the question
+   - then it takes its ASCII value into binary and splits it in half, where the alphabet is only the first 16 letters.
+   - It then applies a shifting method with a key which is only one character.
+3) I then created a new function for decoding this code.
+
+   ![image](https://github.com/Snapskillz123/picoCTF/assets/149099858/e2994c2b-c57b-4807-b9ed-7c78d1f09cda)
+
+5) It basically takes the given flag goes through all 16 alphabets and then decodes each time.
+    - It takes the 4-bit binary code for each character
+    - It then adds the 4-bit binary for a pair of characters.
+    - It then converts the binary into an ASCII integer and then into a character.
+ 6) Using this a list of text came after executing the code.
+
+    ![image](https://github.com/Snapskillz123/picoCTF/assets/149099858/06c4243b-302f-461a-9bcb-8acb1f828ff7)
+
+7) When the key is 'g', a suitable flag comes up which I then use to complete the challenge.
+
 # miniRSA
 
 1) According to the question there is an RSA key given which I opened up on my notepad application.
