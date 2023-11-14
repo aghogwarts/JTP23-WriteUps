@@ -16,3 +16,22 @@
    # Flag
 
    picoCTF{1n_7h3_|<3y_of_e584b363}
+
+
+# ARMssembly 0
+
+1) I first downloaded the file provided in the question and analysed it.
+2) On analysis I realised that it's an assembly language which is a lower-level programming language used to represent machine code instructions.
+3) Using AI tools and different compilers, I learn that:
+   - 'func1' function takes two numbers as arguments and prints the larger number
+   - The 'main' function takes two integers as input and then calls the func1 function      with the inputted numbers as parameters and prints the result
+4) putting the parameters of the function as 4112417903 and 1169092511, the output would be 4112417903.
+5) I then had to convert that to hex as per the question.
+
+   ![image](https://github.com/Snapskillz123/picoCTF/assets/149099858/5bf3b7ae-080b-4b34-a758-d6ccff062485)
+
+   # Flag
+
+   picoCTF{f51e846f}
+   
+
