@@ -11,4 +11,4 @@ Writeups for problems from picoCTF categorised in different folders.
 | Binary Exploitation |   2   |    0    |
 | Cryptography        |   4   |    0    |
 | General Skills      |   0   |    0    |
-| Total               |  17   |    1    |
+| Total               |  19   |    1    |
