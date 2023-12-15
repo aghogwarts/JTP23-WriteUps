@@ -43,6 +43,12 @@ flag: picoCTF{b311a50_0r_v1gn3r3_c1ph3ra966878a}
 
 ![la cifra de](https://github.com/aghogwarts/JTP23-WriteUps/assets/76529146/1b4debb5-1c25-43fa-9c7f-8b52d88c8e33)
 
+## tapping
+The code recevied after running the given command was clearly Morse. An online decoder revealed the flag.
+
+flag: PICOCTF{M0RS3C0D31SFUN2683824610}
+
+![tapping](https://github.com/aghogwarts/JTP23-WriteUps/assets/76529146/3cab1303-0b4e-4c59-9e7d-c94b36b87c0f)
 
 
 
