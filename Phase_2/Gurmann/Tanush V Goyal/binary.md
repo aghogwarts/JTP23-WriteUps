@@ -1,4 +1,7 @@
 ## babygame01
+after inspecting code i realised that the flag will be pritned if i enter 'p' when @ is at -4 from the top left corner
+![babygame01T](https://github.com/aghogwarts/JTP23-WriteUps/assets/107710230/1978e258-b2da-4819-b01a-b2c3f2c45377)
+
 
 ## bufferoverflow0
 
