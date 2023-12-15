@@ -1,9 +1,11 @@
-# picoCTF
-My write-up for different levels in picoCTF
-The levels i have completed: 
+# JTP23-WriteUps
 
-|Sr No.|Reverse Engineering|Binary Exploitation|Web Exploitation|Forensics|Cryptography|
-|------|------------------|-------------------|----------------|---------|------------|
-|  1   |Keygenme-py|stonks |cass|Macrohard Weakedge|new caesar|
-|2|-|buffer overflow 0|Forbidden paths|tunn3l_v1s10n|miniRSA|
-|3|-|-|Local Authority|-|mod1/mod2|
+Contains WriteUps for JTP 2023
+
+Kindly Update Your Writeups in the respective directory under the respective mentor. The repository will go private or push access will be disabled after 20th December so get all the work done in as soon as possible.
+
+Create a Folder of your name under the Mentor and upload your work there if it's a single file or multiple anyhow.
+
+Check out the Pinned Announcement under the discussions tab!!!
+
+Everyone who appended their username should receive a request if not check https://github.com/aghogwarts/JTP23-WriteUps/invitations

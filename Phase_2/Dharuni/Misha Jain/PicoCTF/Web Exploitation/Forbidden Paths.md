@@ -1,0 +1,47 @@
+<font size = '4'>
+<p align = 'center'>
+<b>
+PicoCTF - Forbidden Paths Writeup 
+</b>
+</p>
+</font>
+
+<br>
+<font size = '3'>
+
+<b>Introduction: </b>
+This writeup explains the process of solving the "Forbidden Paths" challenge in PicoCTF. The Forbidden Paths challenge involves exploring a web application and discovering hidden paths or directories that are not intended to be publicly accessible. The goal is to find and access these forbidden paths to retrieve the flag.
+
+<b>Author:</b> Misha Jain
+
+<b>Date:</b> November 14, 2023
+
+<b>Tools Used:</b><br>
+- Web Browser (Firefox)
+
+<b>Challenge Description:</b><br>
+Forbidden Paths is a web exploitation challenge that requires participants to identify hidden directories or paths within a web application. By exploring and accessing these forbidden paths, the flag can be obtained.
+
+<b>Exploitation:</b><br>
+1. Visit the provided URL for the Forbidden Paths challenge and explore the functionality of the web application.<br>
+
+<p align = 'center'>
+
+![](<Pictures/Forbidden Paths - Exploring_Domain.png>)
+
+</p><br>
+
+2. We know that the files are present in the "/usr/share/nginx/html/" directory, and the flag.txt file is present in the root directory. So, to reach the root directory, and display the flag.txt file, we can use the following input:
+
+<p align = 'center'>../../../../flag.txt</p><br>
+
+<p align = 'center'>
+
+![](<Pictures/Forbidden Paths - Flag.png>)
+
+</p><br>
+
+<b>Conclusion:</b><br>
+The Forbidden Paths challenge provides practical experience in finding and accessing hidden paths within a web application. It emphasizes the significance of proper access controls and the potential security risks associated with exposed directories.
+
+</font>

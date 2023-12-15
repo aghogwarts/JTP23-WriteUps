@@ -1,0 +1,2 @@
+Got 16 coins from the PC and renamed to zzzzzzzzzzzzzzzz. This overflowed the memory to give a huge nnumber of coins. After some time in the shop tyring to see if buying the other items the shopkeeper would finally give a star 
+it did not work. USed the coins to change name to large number of 'd' as that was the id of the star. But initilly crashed the game as I entered a very large number of 'd'/. Restarted and entered 24 d's and got the flag.
