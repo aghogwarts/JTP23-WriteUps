@@ -23,3 +23,58 @@ so i manually broke the jumbled flag into parts of 4 and reversed each of them  
 picoCTF{I_l05t_4ll_my_m0n3y_a24c14a6}
 
 
+
+  # babygame01
+  ## problem
+  Get the flag and reach the exit.
+Welcome to BabyGame! Navigate around the map and see what you can find! The game is available to download here. There is no source available, so you'll have to figure your way around the map. You can connect with it using nc saturn.picoctf.net 50533.
+
+
+## SOLUTION
+i ran the instance and opened the game and first just tried random movements and figured out u can move multiple steps at a time.
+i also tried ls command to see if we can run commands from the game terminal but saw that the game character changed to s i tried it again and again and figured out you can change your chracater to anything by typyng l and the character you want
+![Screenshot from 2023-12-15 23-54-29](https://github.com/adwait3/pico/assets/148553626/ce700eaa-3f0f-44ed-8457-ec9a8c7add4e)
+i tried going to the x to finish but it just showed "you win" so i tried exploring the map and figured out you can off screen by going up or down but right left just puts you in the next or previous line. after a lot of efforts i couldnt figure anything out so decided to check how to read the source code of the game file which was a executable file and came across the software GHIDRA, after figuring out the basics i opened my file in ghidra and decided to look into the main, i saw several functions and going through the player movement function i found 
+
+![Screenshot from 2023-12-15 23-59-58](https://github.com/adwait3/pico/assets/148553626/ef8fd0fd-285f-40c4-bfe7-ce6251661890)
+
+this showed what i found earlier that l can be used to change player and wasd for the movements another input p was there so i tried it and found it is used to iterate to the end and solve the game which can be really handy to speed things up now i just had to find the flag.
+and i found
+![Screenshot from 2023-12-16 00-33-10](https://github.com/adwait3/pico/assets/148553626/4bfc1461-241e-4366-b8bc-a78229ca9888)
+i figured local_aa4 must be our flag in the game and w just need to make it anything except null to get the answer.
+after going around the map and spamming different commands i found that going back the first top left space by 4 or 5 steps gives us two different values for flag which was the ascii value of aur player character.
+![Screenshot from 2023-12-16 00-42-57](https://github.com/adwait3/pico/assets/148553626/585f018e-2b8f-43b5-8b0e-0ec078fcf95f)
+then after that i typed p to complete the game which gave me the flag.
+
+![Screenshot from 2023-12-16 00-43-24](https://github.com/adwait3/pico/assets/148553626/a779becb-5bee-432b-8569-e5c07cdb919c)
+
+## FLAG
+picoCTF{gamer_m0d3_enabled_f4f6ad7d}
+
+ # buffer overflow 0
+  ## problem
+  Smash the stack
+Let's start off simple, can you overflow the correct buffer? The program is available here. You can view source here. And connect with it using:
+nc saturn.picoctf.net 64712
+hints
+* How can you trigger the flag to print?
+* If you try to do the math by hand, maybe try and add a few more characters. Sometimes there are things you aren't expecting.
+* Run man gets and read the BUGS section. How many characters can the program really read?
+
+## SOLUTION
+first i ran the program and got
+
+![Screenshot from 2023-12-16 00-52-55](https://github.com/adwait3/pico/assets/148553626/86f3c5b0-169c-4121-b09a-c75be5bd59ea)
+
+then according to the second hint i read the man gets and found out it can be used to read very very long strings and thats why shouldnt be used and fgets shoulf be used instead.
+![Screenshot from 2023-12-16 00-59-38](https://github.com/adwait3/pico/assets/148553626/3aba529d-0809-4ed6-bc38-3c19b944820c)
+then i looked at the source code and found that gets had been used there
+
+![Screenshot from 2023-12-16 01-02-12](https://github.com/adwait3/pico/assets/148553626/962cb1e7-0846-476f-9c43-09f76ccddedf)
+gets had been used to take the input of a buf1 which was of size 100
+looking at the hints and question name i thought this might be related to overloading the buffer so i treid to run the program again witha long string and sure enough it gave me the answer
+![Screenshot from 2023-12-16 01-06-00](https://github.com/adwait3/pico/assets/148553626/76e039ca-0c56-4d18-9a95-082d8ee8f4fc)
+
+
+## FLAG
+picoCTF{ov3rfl0ws_ar3nt_that_bad_9f2364bc}
