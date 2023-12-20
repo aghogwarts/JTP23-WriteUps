@@ -68,4 +68,20 @@ Stacked query-Stacked queries enable attackers to terminate the original (intend
 
 xp_cmdshell : It is a system-extended stored procedure in Microsoft SQL Server that enables the execution of operating system commands and programs from within SQL Server. It provides a mechanism for SQL Server to interact directly with the host operating system's command shell. While it can be a powerful administrative tool, it can also be a security risk if not used cautiously when enabled.
 
-To get access into the hacked website, 
+To get access into the hacked website, we use the MSFvenom, a command-line payload generation tool. We then exexcute the commands mentioned to get access to the database and restore it useing the restore website file present in the Desktop directory.
+
+Manually navigate the defaced website to find the vulnerable search form. What is the first webpage you come across that contains the gift-finding feature?
+/giftsearch.php
+
+Analyze the SQL error message that is returned. What ODBC Driver is being used in the back end of the website?
+ODBC Driver 17 for SQL Server
+
+Inject the 1=1 condition into the Gift Search form. What is the last result returned in the database?
+THM{a4ffc901c27fb89efe3c31642ece4447}
+
+What flag is in the note file Gr33dstr left behind on the system?
+THM{b06674fedd8dfc28ca75176d3d51409e}
+
+What is the flag you receive on the homepage after restoring the website?
+THM{4cbc043631e322450bc55b42c}
+
