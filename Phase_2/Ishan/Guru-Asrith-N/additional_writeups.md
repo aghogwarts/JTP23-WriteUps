@@ -48,3 +48,41 @@ got the flag
 ```
 flag - picoCTF{f0r3ns1c4t0r_n0v1c3_ff27f139}
 ```
+
+### cryptography
+
+#### Mod 26
+
+opened the challenge   
+created a file name hello using `touch hello`   
+used `cat > hello << EOF    
+cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_jdJBFOXJ}    
+EOF`   
+used `cat hello | tr 'A-Za-z' 'N-ZA-Mn-za-m`     
+got the flag     
+```
+flag - picoCTF{next_time_I'll_try_2_rounds_of_rot13_wqWOSBKW}
+```
+
+#### The Numbers 
+
+opened the challenge    
+the numbers are in a substitution cipher  
+converted them   
+got the flag   
+```
+flag -PicoCTF{THENUMBERSMASON}
+```
+
+#### 13
+
+openrd the challenge   
+created a file named hello using `touch hello`  
+used `cat > hello << EOF    
+cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}   
+EOF`    
+used `cat hello | tr 'A-Za-z' 'N-ZA-Mn-za-m`
+got the flag   
+```
+flag - picoCTF{not_too_bad_of_a_problem} 
+```
