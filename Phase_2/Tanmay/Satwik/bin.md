@@ -17,3 +17,8 @@ got no clue!
 so i check out one of the writeups available!(i was correct till this point)
 i put a lot `%x` to get a lot of garbage value
 ![image](https://github.com/s4twik/picoctf/assets/147993943/f8664ad7-983a-4cdd-a465-6f8ef0e6c5d3)
+i removed the unecessary parts and then we see the flag the is in reverse
+so we will use swap endian 
+````
+picoCTF{I_l05t_4ll_my_m0n3y_bdc425ea}
+````
