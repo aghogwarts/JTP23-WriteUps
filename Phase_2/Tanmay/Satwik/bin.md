@@ -19,6 +19,8 @@ i put a lot `%x` to get a lot of garbage value
 ![image](https://github.com/s4twik/picoctf/assets/147993943/f8664ad7-983a-4cdd-a465-6f8ef0e6c5d3)
 i removed the unecessary parts and then we see the flag the is in reverse
 so we will use swap endian 
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/527d1613-896c-465d-8c03-98a6a4ed4095)
+
 ````
-picoCTF{I_l05t_4ll_my_m0n3y_bdc425ea}
+picoCTF{I_l05t_4ll_my_m0n3y_6148be54}
 ````
