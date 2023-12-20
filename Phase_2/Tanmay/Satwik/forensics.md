@@ -43,3 +43,19 @@ DONE!
 
 ![Screenshot from 2023-11-07 16-38-57](https://github.com/s4twik/picoctf/assets/147993943/aa18f49c-efb2-4a0f-8e91-7d1211e63dfe)
 
+#### Macrohard Weakedge
+the best approach to finding files hidden inside other files is binwalk
+if we perform binwalk "Forensics is fun.pptm" we'll see there's a bunch of .zip files. we can extract it using binwalk -e "Forensics is fun.pptm"
+
+Now there's _Forensics is fun.pptm.extracted folder which I will navigate using 7zip.
+
+Since there's too many things in 0.zip I decided I might as well automate the search process. I extracted 0.zip then navigated to it in the terminal.
+
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/944324da-3ba9-4f26-8704-26263e66cfa1)
+i see this file at the end of the list of files
+i cat it
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/d46f677f-7884-47e0-89f0-16c65d5b8438)
+it seems like an encryption 
+Z m x h Z z o g c G l j b 0 N U R n t E M W R f d V 9 r b j B 3 X 3 B w d H N f c l 9 6 M X A 1 f Q
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/90037681-fa7d-4a1f-b04d-54f0dcb030b8)
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/3702639d-62fc-4eea-bcd2-8faa99e4ff63)
