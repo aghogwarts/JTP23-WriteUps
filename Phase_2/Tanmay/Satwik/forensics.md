@@ -244,3 +244,22 @@ lmao too easy, by meta i go and look at metadata
 got the flag picoCTF{s0_m3ta_d8944929}
 ![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/695364a1-909b-4749-bdc8-1150477e1eb8)
 
+#### Milkslap
+i download the png file
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/21f356bd-9c7c-4d52-9f0b-8c2e9678be01)
+from here i tried looking at it's metadata, hexdump and all of the stuff i couldn't find anything so i saw a write up online, it used a commnad called zsteg
+and for some reason it's not working on my terminal
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/887cc5d9-5aa7-4900-bdac-ed6d16ab37d4)
+so i 
+
+#### hideme
+downloaded the file, did all the basic hit and trial!
+thought of going with binwalk, worked surprisingly
+i find files there, so i extract it, i see a file called "secret" so obviously i open it, then i find one more image 
+![flag](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/32c6baf3-fd7e-4548-9973-4043b18bf48f)
+i got the flag!
+#### Packet Primers
+opened the file in wire shark went through a few netwoks found the flag
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/6e818ed8-9345-4a35-8671-ba936daa1737)
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/80720640-67c5-4bc5-bdfc-3be7cf5af08d)
+####
