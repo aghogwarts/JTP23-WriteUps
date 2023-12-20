@@ -203,3 +203,9 @@ on the ends of the code i see { 3 n h 4 n 3 d _ a a b 7 2 9 d d } looks like a f
 so i try picoCTF{3nh4nc3d_aab729dd}
 haha! easy
 ![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/b63bc40a-493f-46a9-be12-15a7f9662e4f)
+#### Wireshark doo dooo do doo...
+opened the file in wireshark, skimmed through the protocol, nothing interesting
+opened protocol hierarchy to check if there are any txt files
+i find two of them one in html format, i see {} looks like a flag so i copy and run through a decoder i get the flag
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/bd18b2f3-3073-46c9-96da-01c0cba43bb5)
+#### 
