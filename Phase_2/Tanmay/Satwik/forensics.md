@@ -59,3 +59,7 @@ it seems like an encryption
 Z m x h Z z o g c G l j b 0 N U R n t E M W R f d V 9 r b j B 3 X 3 B w d H N f c l 9 6 M X A 1 f Q
 ![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/90037681-fa7d-4a1f-b04d-54f0dcb030b8)
 ![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/3702639d-62fc-4eea-bcd2-8faa99e4ff63)
+#### Lookey here
+downloaded the file, quite straight forward tbh tried a few variations of grep
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/e2de4bea-260c-4bd9-befa-065dccaf7fec)
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/6f03c016-2fba-4c69-8196-5307fc4862ce)
