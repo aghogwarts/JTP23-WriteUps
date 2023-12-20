@@ -1,6 +1,6 @@
 | Domain | Progress |
 |--------|----------|
-|binary|2|
+|binary|3|
 |web|3|
 |cryptographhy|3|
 |reverse|3|

@@ -43,3 +43,204 @@ DONE!
 
 ![Screenshot from 2023-11-07 16-38-57](https://github.com/s4twik/picoctf/assets/147993943/aa18f49c-efb2-4a0f-8e91-7d1211e63dfe)
 
+#### Macrohard Weakedge
+the best approach to finding files hidden inside other files is binwalk
+if we perform binwalk "Forensics is fun.pptm" we'll see there's a bunch of .zip files. we can extract it using binwalk -e "Forensics is fun.pptm"
+
+Now there's _Forensics is fun.pptm.extracted folder which I will navigate using 7zip.
+
+Since there's too many things in 0.zip I decided I might as well automate the search process. I extracted 0.zip then navigated to it in the terminal.
+
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/944324da-3ba9-4f26-8704-26263e66cfa1)
+i see this file at the end of the list of files
+i cat it
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/d46f677f-7884-47e0-89f0-16c65d5b8438)
+it seems like an encryption 
+Z m x h Z z o g c G l j b 0 N U R n t E M W R f d V 9 r b j B 3 X 3 B w d H N f c l 9 6 M X A 1 f Q
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/90037681-fa7d-4a1f-b04d-54f0dcb030b8)
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/3702639d-62fc-4eea-bcd2-8faa99e4ff63)
+#### Lookey here
+downloaded the file, quite straight forward tbh tried a few variations of grep
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/e2de4bea-260c-4bd9-befa-065dccaf7fec)
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/6f03c016-2fba-4c69-8196-5307fc4862ce)
+#### Enhance
+downloaded the file looked up the meaning of the file
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/956dd586-5e31-4030-8ba9-b8f82c376e09)
+it's vector!
+i have worked with vectors before in designing (i more reason that i should be in cryptonite)
+
+it cat the file to get the strings format of the file i get this!!
+it's kind off like an html code
+
+````
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.69833333"
+     inkscape:cx="400"
+     inkscape:cy="538.41159"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1872"
+     inkscape:window-height="1016"
+     inkscape:window-x="48"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       id="path3713"
+       cx="106.2122"
+       cy="134.47203"
+       rx="102.05357"
+       ry="99.029755"
+       style="stroke-width:0.26458332" />
+    <circle
+       style="fill:#ffffff;stroke-width:0.26458332"
+       id="path3717"
+       cx="107.59055"
+       cy="132.30211"
+       r="3.3341289" />
+    <ellipse
+       style="fill:#000000;stroke-width:0.26458332"
+       id="path3719"
+       cx="107.45217"
+       cy="132.10078"
+       rx="0.027842503"
+       ry="0.031820003" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:0.00352781px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="107.43014"
+       y="132.08501"
+       id="text3723"><tspan
+         sodipodi:role="line"
+         x="107.43014"
+         y="132.08501"
+         style="font-size:0.00352781px;line-height:1.25;fill:#ffffff;stroke-width:0.26458332;"
+         id="tspan3748">p </tspan><tspan
+         sodipodi:role="line"
+         x="107.43014"
+         y="132.08942"
+         style="font-size:0.00352781px;line-height:1.25;fill:#ffffff;stroke-width:0.26458332;"
+         id="tspan3754">i </tspan><tspan
+         sodipodi:role="line"
+         x="107.43014"
+         y="132.09383"
+         style="font-size:0.00352781px;line-height:1.25;fill:#ffffff;stroke-width:0.26458332;"
+         id="tspan3756">c </tspan><tspan
+         sodipodi:role="line"
+         x="107.43014"
+         y="132.09824"
+         style="font-size:0.00352781px;line-height:1.25;fill:#ffffff;stroke-width:0.26458332;"
+         id="tspan3758">o </tspan><tspan
+         sodipodi:role="line"
+         x="107.43014"
+         y="132.10265"
+         style="font-size:0.00352781px;line-height:1.25;fill:#ffffff;stroke-width:0.26458332;"
+         id="tspan3760">C </tspan><tspan
+         sodipodi:role="line"
+         x="107.43014"
+         y="132.10706"
+         style="font-size:0.00352781px;line-height:1.25;fill:#ffffff;stroke-width:0.26458332;"
+         id="tspan3762">T </tspan><tspan
+         sodipodi:role="line"
+         x="107.43014"
+         y="132.11147"
+         style="font-size:0.00352781px;line-height:1.25;fill:#ffffff;stroke-width:0.26458332;"
+         id="tspan3764">F { 3 n h 4 n </tspan><tspan
+         sodipodi:role="line"
+         x="107.43014"
+         y="132.11588"
+         style="font-size:0.00352781px;line-height:1.25;fill:#ffffff;stroke-width:0.26458332;"
+         id="tspan3752">c 3 d _ a a b 7 2 9 d d }</tspan></text>
+  </g>
+</svg>
+
+````
+i go through this and all i find is a bunchof x axis and y axis coordinates and the text files present there
+on the ends of the code i see { 3 n h 4 n 3 d _ a a b 7 2 9 d d } looks like a flag to me!
+
+so i try picoCTF{3nh4nc3d_aab729dd}
+haha! easy
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/b63bc40a-493f-46a9-be12-15a7f9662e4f)
+#### Wireshark doo dooo do doo...
+opened the file in wireshark, skimmed through the protocol, nothing interesting
+opened protocol hierarchy to check if there are any txt files
+i find two of them one in html format, i see {} looks like a flag so i copy and run through a decoder i get the flag
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/bd18b2f3-3073-46c9-96da-01c0cba43bb5)
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/4223a564-5806-4684-be7a-465bd32ebab4)
+
+#### advanced-potion-making
+i downloaded the file, i opened it in a hex editor, i couldn't figure out the file type so i googled how to do it! i got this article
+https://www.hackingarticles.in/forensic-investigation-examining-corrupted-file-extension/
+acc to this the file should be png!
+i correct the header the file
+i thought i was done and i saved my image here, but it wouldn’t open. Going back to my comparison between a random valid PNG and my corrupted file
+i realized that the hex values of addresses 0x00000009 to 0x0000000B were incorrect. 
+after changing them to 00 00 0D to match my valid PNG, I saved it and opened it to see a red image.
+So we’re not done yet. Ugh.
+However, when I see red (or really any solid color), I try using stegsolve. I flipped through a bunch of options until Red plane 0, and we have our flag!
+I thought I was done and I saved my image here, but it wouldn’t open. Going back to my comparison between a random valid PNG and my corrupted file, I realized that the hex values of addresses 0x00000009 to 0x0000000B were incorrect. After changing them to 00 00 0D to match my valid PNG, I saved it and opened it to see a red image.
+
+So we’re not done yet. Ugh.
+
+However, when I see red (or really any solid color), I try using stegsolve. I flipped through a bunch of options until Red plane 0, and we have our flag!
+
+The hardest part of CTF really is reading the flag. For some reason, I thought the 1 was an l at first!
+
+I thought I was done and I saved my image here, but it wouldn’t open. Going back to my comparison between a random valid PNG and my corrupted file, I realized that the hex values of addresses 0x00000009 to 0x0000000B were incorrect. After changing them to 00 00 0D to match my valid PNG, I saved it and opened it to see a red image.
+
+So we’re not done yet. Ugh.
+
+However, when I see red (or really any solid color), I try using stegsolve. I flipped through a bunch of options until Red plane 0, and we have our flag!
+
+The hardest part of CTF really is reading the flag. For some reason, I thought the 1 was an l at first!
+
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/8ee84ca2-9d03-485c-84cb-5b45adaeea7a)
+
+#### So meta
+lmao too easy, by meta i go and look at metadata
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/372e76a7-a9be-4678-ba1d-a636c92852c7)
+got the flag picoCTF{s0_m3ta_d8944929}
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/695364a1-909b-4749-bdc8-1150477e1eb8)
+

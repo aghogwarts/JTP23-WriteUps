@@ -14,7 +14,9 @@ flag: picoCTF{I_l05t_4ll_my_m0n3y_6045d60d}
 
 ## babygame 01
 
+![babygame01](https://github.com/aghogwarts/JTP23-WriteUps/assets/76529146/0b637951-dd86-4bf7-b938-540b133fafe4)
 
+flag: picoCTF{gamer_m0d3_enabled_2682e995}
 
 ## buffer overflow 0
 The given code uses the gets function which is prone to buffer overflow. When the input contains a string that is larger than the buffer size, it cause buffer overflow. This triggers the flag to print.
