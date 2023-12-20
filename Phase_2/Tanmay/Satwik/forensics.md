@@ -208,4 +208,39 @@ opened the file in wireshark, skimmed through the protocol, nothing interesting
 opened protocol hierarchy to check if there are any txt files
 i find two of them one in html format, i see {} looks like a flag so i copy and run through a decoder i get the flag
 ![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/bd18b2f3-3073-46c9-96da-01c0cba43bb5)
-#### 
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/4223a564-5806-4684-be7a-465bd32ebab4)
+
+#### advanced-potion-making
+i downloaded the file, i opened it in a hex editor, i couldn't figure out the file type so i googled how to do it! i got this article
+https://www.hackingarticles.in/forensic-investigation-examining-corrupted-file-extension/
+acc to this the file should be png!
+i correct the header the file
+i thought i was done and i saved my image here, but it wouldn’t open. Going back to my comparison between a random valid PNG and my corrupted file
+i realized that the hex values of addresses 0x00000009 to 0x0000000B were incorrect. 
+after changing them to 00 00 0D to match my valid PNG, I saved it and opened it to see a red image.
+So we’re not done yet. Ugh.
+However, when I see red (or really any solid color), I try using stegsolve. I flipped through a bunch of options until Red plane 0, and we have our flag!
+I thought I was done and I saved my image here, but it wouldn’t open. Going back to my comparison between a random valid PNG and my corrupted file, I realized that the hex values of addresses 0x00000009 to 0x0000000B were incorrect. After changing them to 00 00 0D to match my valid PNG, I saved it and opened it to see a red image.
+
+So we’re not done yet. Ugh.
+
+However, when I see red (or really any solid color), I try using stegsolve. I flipped through a bunch of options until Red plane 0, and we have our flag!
+
+The hardest part of CTF really is reading the flag. For some reason, I thought the 1 was an l at first!
+
+I thought I was done and I saved my image here, but it wouldn’t open. Going back to my comparison between a random valid PNG and my corrupted file, I realized that the hex values of addresses 0x00000009 to 0x0000000B were incorrect. After changing them to 00 00 0D to match my valid PNG, I saved it and opened it to see a red image.
+
+So we’re not done yet. Ugh.
+
+However, when I see red (or really any solid color), I try using stegsolve. I flipped through a bunch of options until Red plane 0, and we have our flag!
+
+The hardest part of CTF really is reading the flag. For some reason, I thought the 1 was an l at first!
+
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/8ee84ca2-9d03-485c-84cb-5b45adaeea7a)
+
+#### So meta
+lmao too easy, by meta i go and look at metadata
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/372e76a7-a9be-4678-ba1d-a636c92852c7)
+got the flag picoCTF{s0_m3ta_d8944929}
+![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/695364a1-909b-4749-bdc8-1150477e1eb8)
+
