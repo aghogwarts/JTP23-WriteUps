@@ -13,6 +13,7 @@ flag: picoCTF{I_l05t_4ll_my_m0n3y_6045d60d}
 
 
 ## babygame 01
+Consulted walkthrough. Still trying to understand this.
 
 ![babygame01](https://github.com/aghogwarts/JTP23-WriteUps/assets/76529146/0b637951-dd86-4bf7-b938-540b133fafe4)
 
