@@ -1,8 +1,8 @@
 # Day 3
 
-1)I first start the VM and put the given link in the browser.
-2) I then see that there is a place to enter a passcode.
-3) I used the terminal and found that the list of possible passwords lie in the fille 3digits.txt
+1) I first start the VM and put the given link in the browser.
+2) I then see a place to enter a passcode. 
+3) I used the terminal and found that the list of possible passwords lay in the file 3digits.txt
 4) I then used a command to compare all the passwords with the one that unlocks the lock.
 
 ![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/149099858/341a5ad9-fd18-4474-934a-5d4e095a4508)
