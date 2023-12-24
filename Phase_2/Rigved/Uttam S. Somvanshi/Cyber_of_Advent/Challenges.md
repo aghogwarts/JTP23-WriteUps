@@ -45,4 +45,18 @@ What is the flag?
 Input: Using username and password i logged into the website.  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/0c6382cf-653e-4cce-9dfe-37cb3042927f)  
 Answer:``THM{m3rrY4nt4rct1crAft$}``  
-
+## Day 5 Reverse Engineering  
+How large (in bytes) is the AC2023.BAK file?   
+Input: After running the DOSBOX-X program. Simply running the ``DIR`` command give the information of all the files and directories in the current directory. From there the byte size of AC2023.BAK file is visible.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/22067620-77c7-4956-bd80-10147df90e41)  
+Answer ``12,704``  
+What is the name of the backup program?  
+Input: Navigating the to ``C:\TOOLS\BACKUP`` directory, I open the readme file via the ``TYPE``  command. The backup software is referred to as BackupMaster3000, which is the answer.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/d44cddcb-cf9a-4783-ba9f-cee28ab3cbd6)  
+Answer: ``BackupMaster3000``  
+What should the correct bytes be in the backup's file signature to restore the backup properly?  
+Input: From the readme file, the correct bytes have been provided.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/4cf9adfd-fa03-44de-80a2-d188d1e03e99)  
+Answer: ``41 43``  
+What is the flag after restoring the backup successfully?  
+Answer: ``THM{0LD_5CH00L_C00L_d00D}``  
