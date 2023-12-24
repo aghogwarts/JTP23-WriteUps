@@ -19,3 +19,20 @@
 ## Day 4 Brute Forcing  
 - CeWL (pronounced "cool") is a custom word list generator tool that spiders websites to create word lists based on the site's content. Spidering, in the context of web security and penetration testing, refers to the process of automatically navigating and cataloguing a website's content, often to retrieve the site structure, content, and other relevant details. This capability makes CeWL especially valuable to penetration testers aiming to brute-force login pages or uncover hidden directories using organisation-specific terminology. Beyond simple wordlist generation, CeWL can also compile a list of email addresses or usernames identified in team members' page links. Such data can then serve as potential usernames in brute-force operations.
 - Wfuzz is a tool designed for brute-forcing web applications. It can be used to find resources not linked directories, servlets, scripts, etc, brute-force GET and POST parameters for checking different kinds of injections (SQL, XSS, LDAP), brute-force forms parameters (user/password) and fuzzing. 
+## Day 5 Reverse Engineering  
+- The Disk Operating System was a dominant operating system during the early days of personal computing. Microsoft tweaked a DOS variant and rebranded it as MS-DOS, which later served as the groundwork for their graphical extension, the initial version of Windows OS. The fundamentals of file management, directory structures, and command syntax in DOS have stood the test of time and can be found in the command prompt and PowerShell of modern-day Windows systems.
+- Common DOS commands and Utilities:  
+CD	Change Directory  
+DIR	Lists all files and directories in the current directory  
+TYPE	Displays the contents of a text file  
+CLS	Clears the screen  
+HELP	Provides help information for DOS commands  
+EDIT	The MS-DOS Editor
+- File signatures, commonly referred to as "magic bytes", are specific byte sequences at the beginning of a file that identify or verify its content type and format. These bytes often have corresponding ASCII characters, allowing for easier human readability when inspected. The identification process helps software applications quickly determine whether a file is in a format they can handle, aiding operational functionality and security measures.
+- list of some of the most common files and their magic:  
+File Format	-> Magic Bytes -> ASCII representation  
+PNG image file -> 89 50 4E 47 0D 0A 1A 0A -> %PNG  
+GIF image file -> 47 49 46 38 -> GIF8  
+Windows and DOS executables	-> 4D 5A -> MZ  
+Linux ELF executables	7F 45 4C 46 -> .ELF  
+MP3 audio file -> 49 44 33 -> ID3  
