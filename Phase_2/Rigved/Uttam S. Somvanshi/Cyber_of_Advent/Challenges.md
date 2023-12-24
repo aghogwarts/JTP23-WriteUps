@@ -60,3 +60,12 @@ Input: From the readme file, the correct bytes have been provided.
 Answer: ``41 43``  
 What is the flag after restoring the backup successfully?  
 Answer: ``THM{0LD_5CH00L_C00L_d00D}``  
+## Day 6 Memory corruption  
+If the coins variable had the in-memory value in the image below, how many coins would you have in the game?  
+Input: Using the tool (https://www.rapidtables.com/convert/number/hex-to-decimal.html) and inputting the Hexadecimal values in reverse order i get the answer.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/b4f2ecb2-12d6-4336-b6f0-a310a6b3b300)  
+Answer: ``1397772111``  
+What is the value of the final flag?  
+Input: Despite having the money to buy the flag, Mc Greedy has rigged the game such that the star will not be given even if it is bought. instead another item will be given which has a ASCII value of e. In order the get the star which has a ASCII value of d, I used buffer overflow by changing my name into one long enough such that the inventory gets the ASCII value of d. The length of such a name is 4*11 + 1 characters long. So i put 44 a's followed by a d. This gives me the star which upon giving to the christmas tree gives me the flag.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/9a09dd73-1549-46b3-b12f-68cffea803b9)  
+Answer: ``THM{mchoneybell_is_the_real_star}``
