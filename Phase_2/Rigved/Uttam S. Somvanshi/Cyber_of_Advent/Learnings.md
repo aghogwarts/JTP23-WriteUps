@@ -36,3 +36,7 @@ GIF image file -> 47 49 46 38 -> GIF8
 Windows and DOS executables	-> 4D 5A -> MZ  
 Linux ELF executables	7F 45 4C 46 -> .ELF  
 MP3 audio file -> 49 44 33 -> ID3  
+## Day 6 Memory Corruption  
+- Buffer overflow is a memory vulnerability in which the value of a particular variable exceeds the allocated memory and goes into the allocation of another variable.
+- Buffer overflows occur in some programming languages, mostly C and C++, where the variables' boundaries aren't strict.
+- Integers in C++ are stored in a very particular way in memory. First, integers have a fixed memory space of 4 bytes. Secondly, an integer's bytes are stored in reverse order in most desktop machines. This is known as the ``little-endian`` byte order.
