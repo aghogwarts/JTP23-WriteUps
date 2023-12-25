@@ -45,4 +45,7 @@ MP3 audio file -> 49 44 33 -> ID3
 ``<Source IP Address> <Timestamp> <HTTP Request> <Status Code> <User Agent>``  
 - A proxy server is an intermediary between your computer or device and the internet.
 - Understanding the  functions of ``cat``, ``less``, ``head``, ``tail``, ``nl``, ``wc`` and ``cut`` commands.
-- Piping the grep command(used to reach for exact texts in a file) with head.
+- Piping the grep command(used to reach for exact texts in a file) with head.  
+## Day 8 Disk forensics  
+- FTK Imager is a forensics tool that allows forensic specialists to acquire computer data and perform analysis without affecting the original evidence, preserving its authenticity, integrity, and validity for presentation during a trial in a court of law.
+## Day 9
