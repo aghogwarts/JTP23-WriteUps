@@ -40,3 +40,9 @@ MP3 audio file -> 49 44 33 -> ID3
 - Buffer overflow is a memory vulnerability in which the value of a particular variable exceeds the allocated memory and goes into the allocation of another variable.
 - Buffer overflows occur in some programming languages, mostly C and C++, where the variables' boundaries aren't strict.
 - Integers in C++ are stored in a very particular way in memory. First, integers have a fixed memory space of 4 bytes. Secondly, an integer's bytes are stored in reverse order in most desktop machines. This is known as the ``little-endian`` byte order.
+## Day 7 Log Analysis  
+- A log file is a record of important events, actions, errors, or information as they happen in a computer or software application. It's structure is as follows:-  
+``<Source IP Address> <Timestamp> <HTTP Request> <Status Code> <User Agent>``  
+- A proxy server is an intermediary between your computer or device and the internet.
+- Understanding the  functions of ``cat``, ``less``, ``head``, ``tail``, ``nl``, ``wc`` and ``cut`` commands.
+- Piping the grep command(used to reach for exact texts in a file) with head.
