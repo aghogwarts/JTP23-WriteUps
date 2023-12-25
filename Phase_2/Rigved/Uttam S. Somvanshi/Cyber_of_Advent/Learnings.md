@@ -43,9 +43,19 @@ MP3 audio file -> 49 44 33 -> ID3
 ## Day 7 Log Analysis  
 - A log file is a record of important events, actions, errors, or information as they happen in a computer or software application. It's structure is as follows:-  
 ``<Source IP Address> <Timestamp> <HTTP Request> <Status Code> <User Agent>``  
-- A proxy server is an intermediary between your computer or device and the internet.
-- Understanding the  functions of ``cat``, ``less``, ``head``, ``tail``, ``nl``, ``wc`` and ``cut`` commands.
+- A proxy server is an intermediary between your computer or device and the internet.  
+- Understanding the  functions of ``cat``, ``less``, ``head``, ``tail``, ``nl``, ``wc`` and ``cut`` commands.  
 - Piping the grep command(used to reach for exact texts in a file) with head.  
 ## Day 8 Disk forensics  
 - FTK Imager is a forensics tool that allows forensic specialists to acquire computer data and perform analysis without affecting the original evidence, preserving its authenticity, integrity, and validity for presentation during a trial in a court of law.
-## Day 9
+## Day 9 Malware Analysis  
+- A sandbox is like a pretend computer setup that acts like a real one. It's a safe place for experts to test malware and see how it behaves without any danger.  
+- .NET binaries are compiled files containing code written in languages compatible with the .NET framework, such as C#, VB.NET, F#, or managed C++. These binaries are executable files (with the .exe extension) or dynamic link libraries (DLLs with the .dll extension). They can also be assemblies that contain multiple types and resources.
+- Compared to other programming languages like C or C++, languages that use .NET, such as C#, don't directly translate the code into machine code after compilation. Instead, they use an intermediate language (IL), like a pseudocode, and translate it into native machine code during runtime via a Common Language Runtime (CLR) environment.
+- In simple terms, it's only possible to analyse a C or C++ compiled binary by reading its assembly instructions (low-level). Meanwhile, a C# binary can be decompiled and its source code retrieved since the intermediate language contains metadata that can be reconverted to its source code form.
+- C2, or command and control, refers to a centralised system or infrastructure that malicious actors use to remotely manage and control compromised devices or systems. It serves as a channel through which attackers issue commands to compromised entities, enabling them to carry out various activities, such as data theft, surveillance, or further malware propagation.
+- Malware with C2 capabilities typically exhibits the following behaviours:-
+   1. HTTP requests: C2 servers often communicate with compromised assets using HTTP(s) requests. These requests can be used to send commands or receive data.  
+   2. Command execution: This behaviour is the most common, allowing attackers to execute OS commands inside the machine.  
+   3. Sleep or delay: To evade detection and maintain stealth, threat actors typically instruct the running malware to enter a sleep or delay for a specific period. During this time, the malware won't do anything; it will only connect back to the C2 server once the timer completes
+- dnSpy is an open-source .NET assembly (C#) debugger and editor. It is typically used for reverse engineering .NET applications and analysing their code and is primarily designed for examining and modifying .NET assemblies in a user-friendly, interactive way. It's also capable of modifying the retrieved source code (editing), setting breakpoints, or running through the code one step at a time (debugging).
