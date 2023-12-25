@@ -100,3 +100,21 @@ Having retrieved the exfiltrated data, what is the hidden flag?
 Input:Using ``grep frostlings.bigbadstash.thm access.log | cut -d ' ' -f5 | cut -d '=' -f2 | base64 -d | grep {`` the flag is revealed.  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/505788e7-0a60-4b28-9e2d-dc3c2e914ed8)  
 Answer: ``THM{a_gift_for_you_awesome_analyst!}``  
+## Day 8 Disk Forensics  
+What is the malware C2 server?  
+Input: The c2 server name is found from one of the txt files containing a transcript of a conversation.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/9a7d1c61-1555-4fb3-a1b7-a1ac845986cb)  
+Answer:``mcgreedysecretc2.thm``  
+What is the file inside the deleted zip archive?  
+Input: Navigating via the Evidence tree the file is found.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/9c61566a-6d01-4126-863f-36e79c4b018e)  
+Answer: ``JuicyTomaTOY.exe``  
+What flag is hidden in one of the deleted PNG files?  
+Input: Inside portrait.png file  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/ea052782-c1a4-4e93-97fe-64f3749df053)  
+Answer:``THM{byt3-L3vel_@n4Lys15}``  
+What is the SHA1 hash of the physical drive and forensic image?  
+Input: ``File-> Verify Image Integrity``  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/b818dab6-c713-4859-abbd-621f0b5b8b65)  
+Answer:``39f2dea6ffb43bf80d80f19d122076b3682773c``  
+## Day 9
