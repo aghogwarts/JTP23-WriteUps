@@ -117,4 +117,23 @@ What is the SHA1 hash of the physical drive and forensic image?
 Input: ``File-> Verify Image Integrity``  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/b818dab6-c713-4859-abbd-621f0b5b8b65)  
 Answer:``39f2dea6ffb43bf80d80f19d122076b3682773c``  
-## Day 9
+## Day 9 Malware Analysis  
+What HTTP User-Agent was used by the malware for its connection requests to the C2 server?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/6ec7c587-31bc-4149-b8c8-6e3249ee1204)  
+Answer: ``Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15``  
+What is the HTTP method used to submit the command execution output?  
+Answer: ``POST``  
+What key is used by the malware to encrypt or decrypt the C2 data?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/7c481f13-bd71-4d7d-b5e8-3459aba91970)  
+Answer: ``youcanthackthissupersecurec2keys``  
+What is the first HTTP URL used by the malware?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/018d433e-9d51-4769-b05b-6de14c7de74a)  
+Answer: ``https://mcgreedysecretc2.thm/reg``  
+How many seconds is the hardcoded value used by the sleep function?  
+15000 milliseconds is 15 seconds  
+Answer: ``15``  
+What is the C2 command the attacker uses to execute commands via cmd.exe?  
+Answer: ``Shell``  
+What is the domain used by the malware to download another binary?  
+Answer: ``stash.mcgreedy.thm``  
+## Day 10 SQL Injection
