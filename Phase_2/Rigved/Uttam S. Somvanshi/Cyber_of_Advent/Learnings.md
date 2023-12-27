@@ -67,4 +67,18 @@ MP3 audio file -> 49 44 33 -> ID3
 - Stacked queries enable attackers to terminate the original (intended) query and execute additional SQL statements in a single injection, potentially leading to more severe consequences such as data modification and calls to stored procedures or functions.
 - xp_cmdshell is a system-extended stored procedure in Microsoft SQL Server that enables the execution of operating system commands and programs from within SQL Server. It provides a mechanism for SQL Server to interact directly with the host operating system's command shell. While it can be a powerful administrative tool, it can also be a security risk if not used cautiously when enabled.  
 - MSFvenom is a command-line payload generation tool. It's part of the Metasploit Framework, a widely used penetration testing and ethical hacking set of utilities. MSFvenom is explicitly designed for payload generation and can be used to generate a Windows executable that, when executed, will make a reverse shell connection back.
-## Day 11
+## Day 11 Active Directory  
+- Active Directory (AD) is a system mainly used by businesses in Windows environments. It's a centralised authentication system. The Domain Controller (DC) is at the heart of AD and typically manages data storage, authentication, and authorisation within a domain.  
+- Microsoft introduced Windows Hello for Business (WHfB) as a modern and secure way to replace conventional password-based authentication. Instead of relying on traditional passwords, WHfB utilises cryptographic keys for user verification. Users on the Active Directory domain can access the AD using a PIN or biometrics connected to a pair of cryptographic keys: public and private. Those keys help to prove the identity of the entity to which they belong.  
+- The ``msDS-KeyCredentialLink`` is an attribute used by the Domain Controller to store the public key in WHfB for enrolling a new user device
+- Here's the procedure to store a new pair of certificates with WHfB:  
+  1. Trusted Platform Module (TPM) public-private key pair generation: The TPM creates a public-private key pair for the user's account when they enrol. It's crucial to remember that the private key never leaves the TPM and is never disclosed.
+  2. Client certificate request: The client initiates a certificate request to receive a trustworthy certificate. The organisation's certificate issuing authority (CA) receives this request and provides a valid certificate.
+  3. Key storage: The user account's ``msDS-KeyCredentialLink`` attribute will be set.
+- Authentication Process:  
+  1. Authorisation: The Domain Controller decrypts the client's pre-authentication data using the raw public key stored in the msDS-KeyCredentialLink attribute of the user's account.  
+  2. Certificate generation: The certificate is created for the user by the Domain Controller and can be sent back to the client.  
+  3. Authentication: After that, the client can log in to the Active Directory domain using the certificate.
+
+
+
