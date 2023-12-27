@@ -148,3 +148,13 @@ What flag is in the note file Gr33dstr left behind on the system?
 Answer: ``THM{b06674fedd8dfc28ca75176d3d51409e}``  
 What is the flag you receive on the homepage after restoring the website?  
 Answer: ``THM{4cbc043631e322450bc55b42c}``  
+## Day 11 Active Directory  
+What is the hash of the vulnerable user?  
+Input:After finding out the vulnerable user i.e. vansprinkles, we use whisker.exe and then run the rubeus.exe commmand given as a result which gives the NTLM(Windows New Technology LAN Manager) Hash.  
+![Screenshot 2023-12-27 112650](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/77ae0673-9dc0-4a31-9ccd-5f7b1b5c9f99)  
+![Screenshot 2023-12-27 113601](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/33d3d106-246c-4ff9-bd15-b76b8488f039)  
+Answer: ``03E805D8A 8C5AA435FB48832DAD620E3``  
+What is the content of flag.txt on the Administrator Desktop?  
+Input: Navigating to the Administrator desktop, the flag is found inside the flag.txt file.  
+![Screenshot 2023-12-27 114718](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/27d47ef3-d233-4011-ba47-311244cba721)  
+Answer: ``THM{XMAS_IS_SAFE}``  
