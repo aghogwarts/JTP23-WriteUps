@@ -78,7 +78,8 @@ MP3 audio file -> 49 44 33 -> ID3
 - Authentication Process:  
   1. Authorisation: The Domain Controller decrypts the client's pre-authentication data using the raw public key stored in the msDS-KeyCredentialLink attribute of the user's account.  
   2. Certificate generation: The certificate is created for the user by the Domain Controller and can be sent back to the client.  
-  3. Authentication: After that, the client can log in to the Active Directory domain using the certificate.
-
+  3. Authentication: After that, the client can log in to the Active Directory domain using the certificate.  
+## Day 12 Defence in Depth  
+-
 
 
