@@ -80,6 +80,9 @@ MP3 audio file -> 49 44 33 -> ID3
   2. Certificate generation: The certificate is created for the user by the Domain Controller and can be sent back to the client.  
   3. Authentication: After that, the client can log in to the Active Directory domain using the certificate.  
 ## Day 12 Defence in Depth  
--
+- One of the best practices of hardening operations is to follow the principle of least priviledge where a user is only given the permissions that are necessary.
+- Purely text based authentication is no secure enough.
+- Strong Passwords practices should be followed including proper storage of passwords.
+- In order to avoid outside access, platforms should be accessible only to necessary users.
 
 
