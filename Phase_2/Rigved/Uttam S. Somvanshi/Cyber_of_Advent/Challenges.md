@@ -158,3 +158,23 @@ What is the content of flag.txt on the Administrator Desktop?
 Input: Navigating to the Administrator desktop, the flag is found inside the flag.txt file.  
 ![Screenshot 2023-12-27 114718](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/27d47ef3-d233-4011-ba47-311244cba721)  
 Answer: ``THM{XMAS_IS_SAFE}``  
+## Day 12 Defence in-Depth  
+What is the default port for Jenkins?  
+(Given in the url for accessing jenkins)  
+Answer: ``8080``  
+What is the password of the user tracy?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/5ccbedd7-d737-4144-b973-210e1e8007d9)  
+Answer: ``13_1n_33``  
+What's the root flag?  
+Input: Logging in as jenkins admin, using the ``Sudo su`` command in the root directory i found the flag.txt file.  
+Answer:``ezRo0tW1thoutDiD``  
+What is the error message when you login as tracy again and try ``sudo -l`` after its removal from the sudoers group?  
+Answer: ``Sorry, user tracy may not run sudo on jenkins``  
+What's the SSH flag?  
+Found Inside the sshd_config file in /etc/ssh directory.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/3b1c2232-77eb-4b76-942a-dd8670928af4)  
+Answer:``Ne3d2SecureTh1sSecureSh31l``  
+What's the Jenkins flag?  
+Found inside the config.xml file.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/4eda9160-5979-4214-9754-da5a1539d7b8)  
+Answer:``FullTrust_has_n0_Place1nS3curity``  
