@@ -194,3 +194,18 @@ Input: Checking the firewall rules. 8090 port was blocked. In order to check whi
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/cc10bbd0-e6c4-4521-834b-70076a5b988f)  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/d4d3754c-9620-4299-a4c9-8308934698a7)  
 Answer:``THM{P0T$_W@11S_4_S@N7@}``  
+## Day 14 Machine Learning  
+What is the other term given for Artificial Intelligence or the subset of AI meant to teach computers how humans think or nature works?  
+Answer:``Machine Learning``  
+What ML structure aims to mimic the process of natural selection and evolution?  
+Answer:``Genetic algorithm``  
+What is the name of the learning style that makes use of labelled data to train an ML structure?  
+Answer:``supervised learning``  
+What is the name of the layer between the Input and Output layers of a Neural Network?  
+Answer:``hidden layer``  
+What is the name of the process used to provide feedback to the Neural Network on how close its prediction was?  
+Answer:``Back-Propagation``  
+What is the value of the flag you received after achieving more than 90% accuracy on your submitted predictions?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/c5330e4b-eea5-4a47-b4cd-dcb402ef2580)  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/5fe5b7b5-2090-4ba0-b8c1-998b7f5cbd92)  
+Answer:``THM{Neural.Networks.are.Neat!}``  
