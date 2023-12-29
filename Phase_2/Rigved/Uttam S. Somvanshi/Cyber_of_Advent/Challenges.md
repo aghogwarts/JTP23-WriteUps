@@ -178,3 +178,19 @@ What's the Jenkins flag?
 Found inside the config.xml file.  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/4eda9160-5979-4214-9754-da5a1539d7b8)  
 Answer:``FullTrust_has_n0_Place1nS3curity``  
+## Day 13 Intrusion Detection  
+Which security model is being used to analyse the breach and defence strategies?  
+Answer:``Diamond Model``
+Which defence capability is used to actively search for signs of malicious activity?  
+Answer:``Threat Hunting``
+What are our main two infrastructure focuses? (Answer format: answer1 and answer2)  
+Answer:``firewalls and honeypots``  
+Which firewall command is used to block traffic?  
+Answer:``deny``  
+There is a flag in one of the stories. Can you find it?  
+Input: Checking the firewall rules. 8090 port was blocked. In order to check which port i am using i used nmap.  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/bd24518c-2c10-4121-bb51-b6a764c78a76)  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/2c0e71b2-3389-4644-873f-a1130d532fb2)  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/cc10bbd0-e6c4-4521-834b-70076a5b988f)  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/d4d3754c-9620-4299-a4c9-8308934698a7)  
+Answer:``THM{P0T$_W@11S_4_S@N7@}``  
