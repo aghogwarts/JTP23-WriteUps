@@ -84,5 +84,23 @@ MP3 audio file -> 49 44 33 -> ID3
 - Purely text based authentication is no secure enough.
 - Strong Passwords practices should be followed including proper storage of passwords.
 - In order to avoid outside access, platforms should be accessible only to necessary users.
-
-
+## Day 13 Intrusion Detection  
+- Intrusion detection and prevention is a critical component of cyber security aimed at identifying and mitigating threats.
+- The Diamond Model is a security analysis framework that seasoned professionals use to unravel the mysteries of adversary operations and identify the elements used in an intrusion. It comprises four core facets, interconnected to form a well-orchestrated blueprint of the attacker's plans:  
+  1. Adversary
+  2. Victim
+  3. Infrastructure
+  4. Capability (phishing, malware, exploiting vulnerabilties, social engineering, DOS, Insider Threat)
+- Defensive Capability  
+  1. Threat hunting is a proactive and iterative process, led by skilled security professionals, to actively search for signs of malicious activities or security weaknesses within the organisation's network and systems. Threat hunters analyse behavioural patterns, identify advanced threats, and improve incident response. Developing predefined hunting playbooks and fostering collaboration among teams ensures a systematic and efficient approach to threat hunting.
+  2. Vulnerability management is a structured process of identifying, assessing, prioritising, mitigating, and monitoring vulnerabilities in an organisation's systems and applications.
+- Firewalls come in many forms, including hardware, software, or a combination. Their presence is vital, a cornerstone of any cyber security defence strategy. The following are the common types of firewalls that exist:  
+  1. Stateless/packet-filtering filters network packets based on a set of rules(IP,Ports,Protocols.
+  2. Stateful inspection is used to track the state of network connections and use this information to make filtering decisions
+  3. Proxy service protects the network by filtering messages at the application layer, providing deep packet inspection and more granular control over traffic content.
+  4. Web application firewall (WAF) blocks common web attacks such as SQL injection, cross-site scripting, and denial-of-service attacks.
+  5. Next-generation firewall combines the functionalities of the stateless, stateful, and proxy firewalls with features such as intrusion detection and prevention and content filtering.
+- Honeypots are designed to mimic legitimate targets, yet they are under the watchful control of the defender. Honeypots can be classified into two main types:
+  1. Low–interaction honeypots: These honeypots artfully mimic simple systems like web servers or databases. They gather intelligence on attacker behaviour and detect new attack techniques.
+  2. High–interaction honeypots: These honeypots take deception to new heights, emulating complex systems like operating systems and networks. They collect meticulous details on attacker behaviour and study their techniques to exploit vulnerabilities.
+- PenTBox is a tool used to setup Honeypots.
