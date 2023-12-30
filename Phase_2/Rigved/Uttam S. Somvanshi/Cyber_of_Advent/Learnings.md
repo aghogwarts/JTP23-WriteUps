@@ -125,3 +125,10 @@ MP3 audio file -> 49 44 33 -> ID3
 - A Machine Learning pipeline refers to the series of steps involved in building and deploying an ML model. These steps ensure that data flows efficiently from its raw form to predictions and insights.
 - A typical pipeline would include **collecting** data from different sources in different forms, **preprocessing** it and performing feature extraction from the data, **splitting** the data into testing and training data, and then applying Machine Learning **models** and **predictions**.
 - CountVectorizer is a class provided by the scikit-learn library in Python is used to convert text into a token (word) count matrix.
+## Day 16 Machine Learning  
+- CNNs are normal neural networks that simply have the feature-extraction process as part of the network itself i.e, they have the ability to extract features that can be used to train a neural network.
+- We can divide our CNN into three main components:
+   1. Feature extraction  
+   2. Fully connected layers  
+   3. Classification
+
