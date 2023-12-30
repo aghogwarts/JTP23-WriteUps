@@ -121,3 +121,7 @@ MP3 audio file -> 49 44 33 -> ID3
   3. Testing data: This dataset is used to calculate the final performance of the network.
 - The reason for the fluctuation in accuracy is that neural networks have randomness built into them. The weights for each of the inputs to the nodes are randomised at the start, meaning that two neural networks are never exactly the same – similar to how different brains might learn the same data differently. To truly determine the accuracy of your neural network, you would have to train it several times and calculate the average accuracy across all networks.
 - An ML structure is only as good as the quality of the data used to train it. Without good data, we wouldn't be able to receive any accurate output. GIGO (Garbage in garbage out)
+## Day 15 Machine Learning  
+- A Machine Learning pipeline refers to the series of steps involved in building and deploying an ML model. These steps ensure that data flows efficiently from its raw form to predictions and insights.
+- A typical pipeline would include **collecting** data from different sources in different forms, **preprocessing** it and performing feature extraction from the data, **splitting** the data into testing and training data, and then applying Machine Learning **models** and **predictions**.
+- CountVectorizer is a class provided by the scikit-learn library in Python is used to convert text into a token (word) count matrix.
