@@ -233,4 +233,12 @@ What is the password that McGreedy set on the HQ Admin portal?
 ``ReallyNot GonnaGuessThis``  
 What is the value of the flag that you receive when you successfully authenticate to the HQ Admin portal?  
 ``THM{Captcha.Can't.Hold.Me.Back}``  
-## Day 17
+## Day 17 Traffic Analysis  
+- The Network Traffic data flow offers invaluable network management(Monitoring network performance, identifying bandwidth bottlenecks, and ensuring resource allocation and quality of service), troubleshooting(Identifying network issues), incident response, and threat-hunting insights(Proactive analysis for signs of suspicious and malicious patterns).
+- Network flow data is a lightweight alternative to PCAPs. It's commonly used in NetFlow format, a telemetry protocol developed by Cisco that focuses on the metadata part of the traffic. In other words, it provides only the "summary" of the traffic.
+![Screenshot 2023-12-30 194023](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/a70708e3-7134-40eb-83dc-62e413edfb1d)  
+![Screenshot 2023-12-30 194123](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/344ca876-bd0e-49e3-a423-c61cf7df9c7a)  
+- SiLK, or the System for Internet Level Knowledge tool suite, was developed by the CERT Situational Awareness group at Carnegie Mellon University's Software Engineering Institute. It contains various tools and binaries that allow users to collect, parse, filter, and analyse network traffic data.
+- One of the top five actions in packet and flow analysis is overviewing the file info. SiLK suite has a tool ``rwfileinfo`` that makes this possible.
+- ``Rwcut`` reads binary flow records and prints those selected by the user in text format. It works like a reading and filtering tool.
+- ``rwfilter`` is an essential part of the SiLK suite. It comes with multiple filters for each column in the sample you're working on and is vital for conducting impactful flow analysis. However, even though ``rwfilter`` is essential and powerful, it has a tricky detail: it requires its output to be post-processed. This means that it doesn't display the result on the terminal, and as such, it's most commonly used with ``rwcut`` to view the output.
