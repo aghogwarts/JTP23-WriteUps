@@ -140,3 +140,7 @@ MP3 audio file -> 49 44 33 -> ID3
 - One of the top five actions in packet and flow analysis is overviewing the file info. SiLK suite has a tool ``rwfileinfo`` that makes this possible.
 - ``Rwcut`` reads binary flow records and prints those selected by the user in text format. It works like a reading and filtering tool.
 - ``rwfilter`` is an essential part of the SiLK suite. It comes with multiple filters for each column in the sample you're working on and is vital for conducting impactful flow analysis. However, even though ``rwfilter`` is essential and powerful, it has a tricky detail: it requires its output to be post-processed. This means that it doesn't display the result on the terminal, and as such, it's most commonly used with ``rwcut`` to view the output.
+## Day 18
+- The ``top`` command shows us a list of processes in real time with their usage. It's a dynamic list, meaning it changes with the resource usage of each process.  
+- Cronjobs are tasks that we ask the computer to perform on our behalf at a fixed interval. Often, that's where we can find traces of auto-starting processes.  
+- We use the ``systemctl list-unit-files`` to list all services. Since the service we are looking for must be enabled to respawn the process, we use ``grep`` to give us only those services that are enabled.  
