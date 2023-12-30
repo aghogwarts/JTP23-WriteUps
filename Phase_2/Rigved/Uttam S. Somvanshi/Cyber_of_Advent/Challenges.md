@@ -209,3 +209,14 @@ What is the value of the flag you received after achieving more than 90% accurac
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/c5330e4b-eea5-4a47-b4cd-dcb402ef2580)  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/5fe5b7b5-2090-4ba0-b8c1-998b7f5cbd92)  
 Answer:``THM{Neural.Networks.are.Neat!}``  
+## Day 15 Machine Learning  
+What is the key first step in the Machine Learning pipeline?  
+``Data Collection``  
+Which data preprocessing feature is used to create new features or modify existing ones to improve model performance?  
+``feature engineering``  
+During the data splitting step, 20% of the dataset was split for testing. What is the percentage weightage avg of precision of spam detection?  
+``0.98``  
+How many of the test emails are marked as spam?  
+``3``  
+One of the emails that is detected as spam contains a secret code. What is the code?  
+``I_HaTe_BesT_FestiVal``
