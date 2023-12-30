@@ -250,9 +250,15 @@ What is the record value (%) of the dport 53?
 ![Screenshot 2023-12-30 202142](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/181b9cdb-69d5-4a35-b80d-c20ee0a9244b)  
 ``35.332088``  
 What is the number of bytes transmitted by the top talker on the network?  
-
-
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/27b6c47f-9a75-4d74-aa90-5155e51fcfd5)  
+``735229``  
 What is the sTime value of the first DNS record going to port 53?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/c7183418-ad72-4fd7-86f8-5c618147794e)  
+``2023/12/08T04:28:44.825``  
 What is the IP address of the host that the C2 potentially controls?  
+``175[.]175[.]173[.]221``  
 Which IP address is suspected to be the flood attacker?  
+``175[.]215[.]236[.]223``  
 What is the sent SYN packet's number of records?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/2729084f-3eb2-4d8f-bbe2-7c94d5465451)  
+``1658``  
