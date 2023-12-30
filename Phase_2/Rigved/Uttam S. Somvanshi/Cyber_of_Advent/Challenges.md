@@ -262,3 +262,12 @@ Which IP address is suspected to be the flood attacker?
 What is the sent SYN packet's number of records?  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/2729084f-3eb2-4d8f-bbe2-7c94d5465451)  
 ``1658``  
+## Day 18  
+What is the name of the service that respawns the process after killing it?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/c7ce8eba-8bee-4778-8710-5a40bc99b3a8)  
+``a-unkillable.service``  
+What is the path from where the process and service were running?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/ac714755-afa9-4305-9508-5d2445497315)  
+``/etc/systemd/system/``  
+The malware prints a taunting message. When is the message shown?  
+``4``
