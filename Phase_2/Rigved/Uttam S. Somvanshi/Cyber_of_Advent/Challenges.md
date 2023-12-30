@@ -219,4 +219,18 @@ During the data splitting step, 20% of the dataset was split for testing. What i
 How many of the test emails are marked as spam?  
 ``3``  
 One of the emails that is detected as spam contains a secret code. What is the code?  
-``I_HaTe_BesT_FestiVal``
+``I_HaTe_BesT_FestiVal``  
+## Day 16 Machine Learning  
+What key process of training a neural network is taken care of by using a CNN?  
+``feature extraction``  
+What is the name of the process used in the CNN to extract the features?  
+``Convolution``  
+What is the name of the process used to reduce the features down?  
+``Pooling``  
+What off-the-shelf CNN did we use to train a CAPTCHA-cracking OCR model?  
+``Attention OCR``  
+What is the password that McGreedy set on the HQ Admin portal?  
+``ReallyNot GonnaGuessThis``  
+What is the value of the flag that you receive when you successfully authenticate to the HQ Admin portal?  
+``THM{Captcha.Can't.Hold.Me.Back}``  
+## Day 17
