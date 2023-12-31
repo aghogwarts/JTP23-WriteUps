@@ -24,7 +24,9 @@ We'll create a file storing the passwords
     - **`-w usernames.txt`** means to write the output into the **usernames.txt** file
     - **`http://MACHINE_IP`** is our target site
     - **`--lowercase`** is custom extension which stores the output values in lower case
-    Same as before, on reading out the text file, we can see a whole bunch of possible usernames.
+
+Same as before, on reading out the text file, we can see a whole bunch of possible usernames.
+
 ![Screenshot (84)](https://github.com/Wixter07/HARSHITH-JTP-2/assets/150792650/f47f7e23-2e2a-402c-80a9-6ced5134d2f5)
 
     Now we'll try out these two files in combination on the website login portal using **wfuzz** tool as
@@ -34,6 +36,8 @@ We'll create a file storing the passwords
   - **`-hs "Please enter the correct credentials"`** hides responses containing the string "Please enter the correct credentials", which is the message displayed for wrong login attempts.
   - **`-u http://MACHINE_IP/login.php`** specifies the target site.
   - **`-d "username=FUZZ&password=FUZ2Z"`** provides the POST data format where FUZZ will be replaced by usernames and FUZ2Z by passwords.
+
+
 ![Screenshot (85)](https://github.com/Wixter07/HARSHITH-JTP-2/assets/150792650/2710b7bf-562d-465a-bbb9-e22ef3a5e130)
 
 And then we get the password as **`isaias:Happiness`**
