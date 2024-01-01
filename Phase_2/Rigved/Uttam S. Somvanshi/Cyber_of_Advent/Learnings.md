@@ -140,7 +140,16 @@ MP3 audio file -> 49 44 33 -> ID3
 - One of the top five actions in packet and flow analysis is overviewing the file info. SiLK suite has a tool ``rwfileinfo`` that makes this possible.
 - ``Rwcut`` reads binary flow records and prints those selected by the user in text format. It works like a reading and filtering tool.
 - ``rwfilter`` is an essential part of the SiLK suite. It comes with multiple filters for each column in the sample you're working on and is vital for conducting impactful flow analysis. However, even though ``rwfilter`` is essential and powerful, it has a tricky detail: it requires its output to be post-processed. This means that it doesn't display the result on the terminal, and as such, it's most commonly used with ``rwcut`` to view the output.
-## Day 18
+## Day 18 Eradication  
 - The ``top`` command shows us a list of processes in real time with their usage. It's a dynamic list, meaning it changes with the resource usage of each process.  
 - Cronjobs are tasks that we ask the computer to perform on our behalf at a fixed interval. Often, that's where we can find traces of auto-starting processes.  
 - We use the ``systemctl list-unit-files`` to list all services. Since the service we are looking for must be enabled to respawn the process, we use ``grep`` to give us only those services that are enabled.  
+## Day 19 Memory Forensics  
+- Memory forensics, also known as volatile memory analysis or random access memory (RAM) forensics, is a branch of digital forensics which involves the examination and analysis of a computer's volatile memory (RAM) to uncover digital evidence and artefacts related to computer security incidents, cybercrimes, and other forensic investigations. Memory forensics focuses on the programs that were running when the memory dump was created. This type of data is volatile because it will be deleted when the computer is turned off.  
+- A memory dump is a snapshot of memory that has been captured to perform memory analysis. It will contain data relating to running processes captured when the memory dump was created.
+- A Process is an independent, self-contained unit of execution within an operating system that consists of its own program code, data, memory space, and system resources.
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/d5e2adf2-914e-4cee-a37f-6ed797e50977)  
+- Volatility is a command-line tool that lets digital forensics and incident response teams analyse a memory dump in order to perform memory analysis. ``vol.py -h``
+- Profiles are crucial for correctly interpreting the memory dump from a target system. A profile in Volatility defines the operating system's architecture, version, and various memory specific to the target system.
+- The history file is a good place to start because it allows us to see whether there are any commands executed by our malicious actor while they were on the system. Use ``linux_bash`` plugin  
+- In memory forensics, examining running processes is a fundamental and crucial part of analysing a system's memory dump. Use ``linux_pslist`` plugin.
