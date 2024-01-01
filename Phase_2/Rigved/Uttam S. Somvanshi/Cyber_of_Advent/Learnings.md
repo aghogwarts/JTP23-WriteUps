@@ -153,3 +153,9 @@ MP3 audio file -> 49 44 33 -> ID3
 - Profiles are crucial for correctly interpreting the memory dump from a target system. A profile in Volatility defines the operating system's architecture, version, and various memory specific to the target system.
 - The history file is a good place to start because it allows us to see whether there are any commands executed by our malicious actor while they were on the system. Use ``linux_bash`` plugin  
 - In memory forensics, examining running processes is a fundamental and crucial part of analysing a system's memory dump. Use ``linux_pslist`` plugin.
+## Day 20 DevSecOps  
+- GitLab is a platform that enables collaboration and automation throughout the software development lifecycle, which is the framework structure that describes the stages that code goes through, from design and development to deployment.
+-  CI/CD stands for continuous integration and continuous delivery.
+ 1. Continuous integration: CI refers to integrating code changes from multiple contributors into a shared repository (where code is stored in a VCS; you can think of it as a folder structure).
+ 2. Continuous deployment: CD automates code deployment to different environments.
+-  A poisoned pipeline execution is a type of attack which involves compromising a component or stage in the SDLC.
