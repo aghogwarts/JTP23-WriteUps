@@ -290,4 +290,16 @@ Use the command ``strings extracted/miner.<PID from question 2>.0x400000 | grep 
 After reading the elfie file, what location is the mysqlserver process dropped in on the file system?  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/c264c2f0-22c7-48e2-8007-70a0b2f4b06a)  
 ``/var/tmp/.system-python3.8-Updates/mysqlserver``  
-## Day 20
+## Day 20 DevSecOps  
+What is the handle of the developer responsible for the merge changes?  
+``BadSecOps``  
+What port is the defaced calendar site server running on?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/4017893c-e881-4818-b858-d0f089c977cc)  
+``9081``  
+What server is the malicious server running on?  
+``Apache``
+What message did the Frostlings leave on the defaced site?  
+``Frostlings Rule``
+What is the commit ID of the original code for the Advent Calendar site?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/5fba71b0-0c5a-4a75-a8e8-17349764dac8)  
+``986b7407``  
