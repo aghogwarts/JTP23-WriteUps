@@ -262,7 +262,7 @@ Which IP address is suspected to be the flood attacker?
 What is the sent SYN packet's number of records?  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/2729084f-3eb2-4d8f-bbe2-7c94d5465451)  
 ``1658``  
-## Day 18  
+## Day 18 Eradication  
 What is the name of the service that respawns the process after killing it?  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/c7ce8eba-8bee-4778-8710-5a40bc99b3a8)  
 ``a-unkillable.service``  
@@ -270,4 +270,24 @@ What is the path from where the process and service were running?
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/ac714755-afa9-4305-9508-5d2445497315)  
 ``/etc/systemd/system/``  
 The malware prints a taunting message. When is the message shown?  
-``4``
+``4``  
+## Day 19 Memory Forensics  
+What is the exposed password that we find from the bash history output?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/acd05a7d-876c-4ea1-8976-6a8700111965)  
+``NEhX4VSrN7sV``  
+What is the PID of the miner process that we find?  
+Using ``vol.py -f linux.mem --profile="LinuxUbuntu_5_4_0-163-generic_profilex64" linux_pslist``  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/a89931b5-2256-49fc-89f6-9c6fb00a0e58)  
+``10280``  
+What is the MD5 hash of the miner process?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/a837c2be-3aeb-4b02-8c5f-37511cd4e2c3)  
+``153a5c8efe4aa3be240e5dc645480dee``  
+What is the MD5 hash of the mysqlserver process?  
+``c586e774bb2aa17819d7faae18dad7d1``  
+Use the command ``strings extracted/miner.<PID from question 2>.0x400000 | grep http://``. What is the suspicious URL?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/8c2517a0-b2d5-406a-ae39-547656755c1c)  
+``hxxp[://]mcgreedysecretc2[.]thm``  
+After reading the elfie file, what location is the mysqlserver process dropped in on the file system?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/c264c2f0-22c7-48e2-8007-70a0b2f4b06a)  
+``/var/tmp/.system-python3.8-Updates/mysqlserver``  
+## Day 20
