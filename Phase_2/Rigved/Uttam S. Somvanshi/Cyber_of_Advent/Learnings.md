@@ -173,8 +173,18 @@ MP3 audio file -> 49 44 33 -> ID3
 - Prerequisites for exploitation
   1. Vulnerable input points: Web applications must have input fields susceptible to manipulation, such as URLs or file upload functionalities.
   2. Lack of input validation: The application should have adequate input validation or effective sanitisation mechanisms, allowing an attacker to craft malicious requests.
-## Day 23 
+## Day 23 Coerced Authentication
 - The Server Message Block protocol allows clients (like workstations) to communicate with a server (like a file share). In networks that use Microsoft AD, SMB governs everything from inter-network file-sharing to remote administration.
 - NetNTLM, often referred to as Windows Authentication or just NTLM Authentication, allows the application to play the role of a middleman between the client and AD. NetNTLM is a very popular authentication protocol in Windows and is used for various different services, including SMB and RDP. It is used in AD environments as it allows servers (such as network file shares) to pass the buck to AD for authentication.
 - Responder allows us to perform man-in-the-middle attacks by poisoning the responses during NetNTLM authentication, tricking the client into talking to you instead of the actual server they want to connect to.
 - PrintSpooler is an attack that coerces the Print Spooler service on Windows hosts to authenticate to a host of your choosing. PetitPotam is similar but leverages a different issue to coerce authentication.
+## Day 24 Mobile Analysis
+- Forensics is a method of using science to solve crimes. As a forensic scientist, you would expect to collect evidence from crime scenes, such as fingerprints, DNA, and footprints. When it comes to digital evidence, the ideal approach is to acquire a raw image. A raw image is a bit-for-bit copy of the device’s storage.
+- Chain of custody is a legal concept used to track the possession and handling of evidence from the time it’s collected at a crime scene to the moment it’s presented in court. The chain of custody is documented through a series of written records that track the evidence’s movement and who handled it at each step.
+- There are four main types of forensic image acquisition:
+  1. Static acquisition: A bit-by-bit image of the disk is created while the device is turned off.
+  2. Live acquisition: A bit-by-bit image of the disk is created while the device is turned on.
+  3. Logical acquisition: A select list of files is copied from the seized device.
+  4. Sparse acquisition: Select fragments of unallocated data are copied. The unallocated areas of the disk might contain deleted data; however, this approach is limited compared to static and live acquisition because it doesn’t cover the whole disk.
+- An Android device won’t provide root access to the user, unless it’s for development purposes. This limits the ability to access many files and directories on the phone storage. “Rooting” an Android device gives us full access to the device files, including raw access to the disk.
+--x--All Tasks Completed--x--
