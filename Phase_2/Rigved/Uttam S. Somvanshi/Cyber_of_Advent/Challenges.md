@@ -332,4 +332,15 @@ What is the password that McGreedy set for the Administrator account?
 ``GreedyGrabber1@``  
 What is the value of the flag that is placed on the Administrator’s desktop?  
 ``THM{Greedy.Greedy.McNot.So.Great.Stealy}``  
-## Day 24
+## Day 24 Mobile Analysis
+One of the photos contains a flag. What is it?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/aaf2ec7c-bafd-4105-88f0-578ed3761f44)  
+``THM{DIGITAL_FORENSICS}``  
+What name does Tracy use to save Detective Frost-eau’s phone number?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/540a721f-abb7-47de-aa24-e3af3483a6dc)  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/2e9be8ac-2138-46d4-bc51-d80ae5029f2c)  
+``Detective Carrot-Nose``  
+One SMS exchanged with Van Sprinkles contains a password. What is it?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/95264407-d109-490d-af0d-f46798de6766)  
+``chee7AQu``  
+--x--All Tasks Completed--x--  
