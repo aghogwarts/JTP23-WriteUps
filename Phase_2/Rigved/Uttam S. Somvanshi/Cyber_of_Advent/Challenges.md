@@ -308,4 +308,17 @@ What Linux kernel version is the Jenkins node?
 ``5.4.0-1029-aws``  
 What value is found from /var/lib/jenkins/secret.key?  
 ``90e748eafdd2af4746a5ef7941e63272f24f1e33a2882f614ebfa6742e772ba7``  
-## Day 22
+## Day 22 SSRF
+Is SSRF the process in which the attacker tricks the server into loading only external resources (yea/nay)?  
+``nay``  
+What is the C2 version?  
+``1.1``  
+What is the username for accessing the C2 panel?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/5539dafb-d3fa-4c2a-8c80-d077ffb3d1a8)  
+``mcgreedy``  
+What is the flag value after accessing the C2 panel?  
+``THM{EXPLOITED_31001}``  
+What is the flag value after stopping the data exfiltration from the McSkidy computer?  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/9d4e950c-04fb-425b-b993-ff820c0b5ccd)  
+``THM{AGENT_REMOVED_1001}``  
+## Day 23
