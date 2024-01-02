@@ -159,3 +159,8 @@ MP3 audio file -> 49 44 33 -> ID3
  1. Continuous integration: CI refers to integrating code changes from multiple contributors into a shared repository (where code is stored in a VCS; you can think of it as a folder structure).
  2. Continuous deployment: CD automates code deployment to different environments.
 -  A poisoned pipeline execution is a type of attack which involves compromising a component or stage in the SDLC.
+## Day 21 DevSecOps
+- general segments of a pipeline:  
+![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/1f0b564e-68cc-4be0-8a4b-96bb61bbc8a4)  
+- If an environment is employing a development pipeline, a configuration file must be defined for the steps the build system must take. If a repository contains all the necessary source and build files, and another repository contains the pipeline files, write permissions could differ between the two, resulting in an indirect PPE vulnerability. In this example, you can assume that the repository containing the source is not write-protected and the repository containing the pipeline is write-protected.
+- To exploit this vulnerability, an attacker would need to identify a file or other parameter they can arbitrarily change that the pipeline file will use. Makefiles and other build files are usually exploitable because they are used to build the source and can run any arbitrary commands as defined in the makefile.
