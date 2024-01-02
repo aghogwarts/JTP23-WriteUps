@@ -303,3 +303,9 @@ What message did the Frostlings leave on the defaced site?
 What is the commit ID of the original code for the Advent Calendar site?  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/5fba71b0-0c5a-4a75-a8e8-17349764dac8)  
 ``986b7407``  
+## Day 21 DevSecOps  
+What Linux kernel version is the Jenkins node?  
+``5.4.0-1029-aws``  
+What value is found from /var/lib/jenkins/secret.key?  
+``90e748eafdd2af4746a5ef7941e63272f24f1e33a2882f614ebfa6742e772ba7``  
+## Day 22
