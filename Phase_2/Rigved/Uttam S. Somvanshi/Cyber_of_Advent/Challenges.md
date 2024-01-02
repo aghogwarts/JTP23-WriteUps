@@ -321,4 +321,15 @@ What is the flag value after accessing the C2 panel?
 What is the flag value after stopping the data exfiltration from the McSkidy computer?  
 ![image](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/9d4e950c-04fb-425b-b993-ff820c0b5ccd)  
 ``THM{AGENT_REMOVED_1001}``  
-## Day 23
+## Day 23 Coerced Authentication
+What is the name of the AD authentication protocol that makes use of tickets?  
+``Kerberos``  
+What is the name of the AD authentication protocol that makes use of the NTLM hash?  
+``NetNTLM``  
+What is the name of the tool that can intercept these authentication challenges?  
+``Responder``  
+What is the password that McGreedy set for the Administrator account?  
+``GreedyGrabber1@``  
+What is the value of the flag that is placed on the Administrator’s desktop?  
+``THM{Greedy.Greedy.McNot.So.Great.Stealy}``  
+## Day 24
