@@ -173,3 +173,8 @@ MP3 audio file -> 49 44 33 -> ID3
 - Prerequisites for exploitation
   1. Vulnerable input points: Web applications must have input fields susceptible to manipulation, such as URLs or file upload functionalities.
   2. Lack of input validation: The application should have adequate input validation or effective sanitisation mechanisms, allowing an attacker to craft malicious requests.
+## Day 23 
+- The Server Message Block protocol allows clients (like workstations) to communicate with a server (like a file share). In networks that use Microsoft AD, SMB governs everything from inter-network file-sharing to remote administration.
+- NetNTLM, often referred to as Windows Authentication or just NTLM Authentication, allows the application to play the role of a middleman between the client and AD. NetNTLM is a very popular authentication protocol in Windows and is used for various different services, including SMB and RDP. It is used in AD environments as it allows servers (such as network file shares) to pass the buck to AD for authentication.
+- Responder allows us to perform man-in-the-middle attacks by poisoning the responses during NetNTLM authentication, tricking the client into talking to you instead of the actual server they want to connect to.
+- PrintSpooler is an attack that coerces the Print Spooler service on Windows hosts to authenticate to a host of your choosing. PetitPotam is similar but leverages a different issue to coerce authentication.
