@@ -1,4 +1,4 @@
-## Day 1 Machine Learning
+no## Day 1 Machine Learning
 - Prompt injection attacks manipulate a chatbot's responses by inserting specific queries, tricking it into unexpected reactions. These attacks could range from extracting sensitive info to spewing out misleading responses.  
 - Natural Language Processing is a sub-field of Artificial Intelligence dedicated to enabling machines to understand and respond to human language. One of the core mechanisms in NLP involves predicting the next possible word in a sequence based on the context provided by the preceding words. With the training data fed into it, NLP analyses the patterns in the data to understand the relationships between words and make educated guesses on what word should come next based on the context.  
 - Security measures are put in place to avoid prompt injection but loopholes can be used to by pass them like accessing information under the name of another person authorized to have that information provided no verification is put in place or by disengaging the security measures by telling the chatbot it is in maintainence mode.  
@@ -186,5 +186,5 @@ MP3 audio file -> 49 44 33 -> ID3
   2. Live acquisition: A bit-by-bit image of the disk is created while the device is turned on.
   3. Logical acquisition: A select list of files is copied from the seized device.
   4. Sparse acquisition: Select fragments of unallocated data are copied. The unallocated areas of the disk might contain deleted data; however, this approach is limited compared to static and live acquisition because it doesn’t cover the whole disk.
-- An Android device won’t provide root access to the user, unless it’s for development purposes. This limits the ability to access many files and directories on the phone storage. “Rooting” an Android device gives us full access to the device files, including raw access to the disk.
+- An Android device won’t provide root access to the user, unless it’s for development purposes. This limits the ability to access many files and directories on the phone storage. “Rooting” an Android device gives us full access to the device files, including raw access to the disk.  
 --x--All Tasks Completed--x--
