@@ -1,4 +1,4 @@
-no## Day 1 Machine Learning
+## Day 1 Machine Learning
 - Prompt injection attacks manipulate a chatbot's responses by inserting specific queries, tricking it into unexpected reactions. These attacks could range from extracting sensitive info to spewing out misleading responses.  
 - Natural Language Processing is a sub-field of Artificial Intelligence dedicated to enabling machines to understand and respond to human language. One of the core mechanisms in NLP involves predicting the next possible word in a sequence based on the context provided by the preceding words. With the training data fed into it, NLP analyses the patterns in the data to understand the relationships between words and make educated guesses on what word should come next based on the context.  
 - Security measures are put in place to avoid prompt injection but loopholes can be used to by pass them like accessing information under the name of another person authorized to have that information provided no verification is put in place or by disengaging the security measures by telling the chatbot it is in maintainence mode.  
