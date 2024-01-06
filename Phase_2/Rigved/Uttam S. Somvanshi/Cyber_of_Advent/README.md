@@ -20,6 +20,6 @@ CI/CD Indirect Poisoned Pipeline Execution(D20&21),
 Server Side Request Forgery(D22),  
 Coerced Authentication via ntlm_theft(D23) and  
 Mobile Analysis via Autopsy(D24).  
-It took me around 14 days to finish during the holidays from 17th December to 2nd January 
+It took me around 11 days to finish during the holidays from 23th December to 2nd January 
 Certificate for Advent of Cyber.  
 ![THM-MOFO9GAZDEAOD2023cert](https://github.com/Azure9733/JTP23-WriteUps/assets/143328010/4c047e62-597f-4d20-8ed7-b32466f6a69d)  
