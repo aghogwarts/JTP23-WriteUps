@@ -4,10 +4,15 @@
 	- CaaS
 	- Forbidden paths
   	- Local Authority
+  	- Insp3ct0r
+  	- where are the robots
+  	- Some assembly required 1
 - [Reverse Engineering](https://github.com/codegallivant/cryptonite-taskphase/blob/main/picoctf/writeup.md#reverse-engineering)
 	- keygenme-py
  	- GDB babystep 0
   	- ARMssembly 0
+  	- speeds and feeds
+  	- crackme-py
 - [Binary Exploitation](https://github.com/codegallivant/cryptonite-taskphase/blob/main/picoctf/writeup.md#binary-exploitation)
   	- stonks
   	- babygame01
@@ -111,6 +116,22 @@ Logged in with these credentials and the flag was shown.
 <br>
 **Flag obtained:** ``picoCTF{j5_15_7r4n5p4r3n7_05df90c8}``
 
+### Insp3ct0r
+Inspected element and went through files. Different parts of the flag were written in different files.
+<be>
+**Flag obtained:** ``picoCTF{tru3_d3t3ct1ve_0r_ju5t_lucky?2e7b23e3}``
+
+### where are the robots
+The website's homepage text says "where are the robots".
+I went to ``/robot.txt`` wherein it hinted to another directory. Upon entering it, the flag appeared.
+<br>
+**Flag obtained:** ``picoCTF{ca1cu1at1ng_Mach1n3s_1bb4c}``
+
+### Some assembly required 1
+I inspected element and went to the network tab, where there was a file containing what seemed to be the flag obfuscated with other non-readable characters. 
+<br>
+**Flag obtained:** ``picoCTF{c733fda95299a16681f37b3ff09f901c}``
+
 ## Reverse Engineering
 ### keygenme-py
 ![image](https://github.com/codegallivant/cryptonite-taskphase/assets/27366422/55999ecb-dfff-4576-80a0-6280c0e9703c)
@@ -198,6 +219,23 @@ Decimal 4134207980 in hexadecimal is F66B01EC.
 **Flag obtained:** ``picoCTF{F66B01EC}``
 <br><br>
 Edit: Could have used ghidra for decompiling files and HxD as a hex editor to read assembly language from binary files.
+
+### speeds and feeds
+G-Code is being printed/executed on the shop server. G-Code is the language CNC (Computer Numeric Control) machines use.
+![image](https://github.com/codegallivant/cryptonite-taskphase/assets/27366422/1f75b34d-8062-454e-a62b-5f539b9f5198)
+<br>
+I tried a G-Code translator. It seemed that the CNC machine was drawing something but the result was very extensive so I couldn't decipher it all then. Then I copy-pasted the code into a G-Code simulator [here](https://gcodetutor.com/cnc-program-simulator.html). 
+<br>
+![image](https://github.com/codegallivant/cryptonite-taskphase/assets/27366422/bd6e6ac5-dfcd-413d-9ac4-4676fcfc0da2)
+<br>
+**Flag obtained:** ``picoCTF{num3r1cal_c0ntr0l_1395ffad}``
+
+### crackme-py
+The code to decrypt the ROT47 encoded flag was given within the program itself. I inserted code to call this function and ran the program.
+<br>
+![image](https://github.com/codegallivant/cryptonite-taskphase/assets/27366422/2fe6f0a0-4dc6-468c-a959-9b9284be4aa1)
+<br>
+**Flag obtained:** ``picoCTF{1|\/|_4_p34|\|ut_ef5b69a3}``
 
 ## Binary Exploitation
 ### stonks
