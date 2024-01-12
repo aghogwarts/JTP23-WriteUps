@@ -67,7 +67,7 @@ downloaded the file, quite straight forward tbh tried a few variations of grep
 downloaded the file looked up the meaning of the file
 ![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/956dd586-5e31-4030-8ba9-b8f82c376e09)
 it's vector!
-i have worked with vectors before in designing (i more reason that i should be in cryptonite)
+i have worked with vectors before in designing (more of the reason that i should be in cryptonite)
 
 it cat the file to get the strings format of the file i get this!!
 it's kind off like an html code
