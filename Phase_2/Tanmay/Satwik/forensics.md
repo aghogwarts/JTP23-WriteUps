@@ -220,20 +220,6 @@ i realized that the hex values of addresses 0x00000009 to 0x0000000B were incorr
 after changing them to 00 00 0D to match my valid PNG, I saved it and opened it to see a red image.
 So we’re not done yet. Ugh.
 However, when I see red (or really any solid color), I try using stegsolve. I flipped through a bunch of options until Red plane 0, and we have our flag!
-I thought I was done and I saved my image here, but it wouldn’t open. Going back to my comparison between a random valid PNG and my corrupted file, I realized that the hex values of addresses 0x00000009 to 0x0000000B were incorrect. After changing them to 00 00 0D to match my valid PNG, I saved it and opened it to see a red image.
-
-So we’re not done yet. Ugh.
-
-However, when I see red (or really any solid color), I try using stegsolve. I flipped through a bunch of options until Red plane 0, and we have our flag!
-
-The hardest part of CTF really is reading the flag. For some reason, I thought the 1 was an l at first!
-
-I thought I was done and I saved my image here, but it wouldn’t open. Going back to my comparison between a random valid PNG and my corrupted file, I realized that the hex values of addresses 0x00000009 to 0x0000000B were incorrect. After changing them to 00 00 0D to match my valid PNG, I saved it and opened it to see a red image.
-
-So we’re not done yet. Ugh.
-
-However, when I see red (or really any solid color), I try using stegsolve. I flipped through a bunch of options until Red plane 0, and we have our flag!
-
 The hardest part of CTF really is reading the flag. For some reason, I thought the 1 was an l at first!
 
 ![image](https://github.com/aghogwarts/JTP23-WriteUps/assets/147993943/8ee84ca2-9d03-485c-84cb-5b45adaeea7a)
